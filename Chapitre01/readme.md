@@ -1,1 +1,1 @@
-Chapitre sur les objets/classes
+Objets et classes
