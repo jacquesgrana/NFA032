@@ -1,7 +1,7 @@
 
 public class ControleurAnimal {
 	
-	public void insererAnimal(ANIMAL maTete) {
+	public static void insererAnimal(ANIMAL maTete) {
 		int longueurListe = longueurListe(maTete);
 		int rangSaisi = 0, compteur = 1;
 		String nomNom, monSurnom;
@@ -37,7 +37,7 @@ public class ControleurAnimal {
 
 
 
-	public void supprimerAnimal(ANIMAL maTete) {
+	public static void supprimerAnimal(ANIMAL maTete) {
 		int longueurListe = longueurListe(maTete);
 		int rangSaisi = 0, compteur = 1;
 		ANIMAL precedent , temp;
@@ -60,7 +60,7 @@ public class ControleurAnimal {
 		precedent.setSuivant(temp.getSuivant());
 	}
 
-	public void ajouterAnimal(ANIMAL maTete) {
+	public static void ajouterAnimal(ANIMAL maTete) {
 		String nomNom, monSurnom;
 		ANIMAL monDernierAnimal, monNouvelAnimal;
 		monDernierAnimal = maTete;
@@ -79,7 +79,7 @@ public class ControleurAnimal {
 		monDernierAnimal.setSuivant(monNouvelAnimal);
 	}
 
-	public void afficherListe(ANIMAL maTete) {
+	public static void afficherListe(ANIMAL maTete) {
 		int compteur = 1;
 		ANIMAL monAnimal;
 		monAnimal=maTete;
@@ -90,7 +90,7 @@ public class ControleurAnimal {
 		}
 	}
 	
-	public int longueurListe(ANIMAL maTete) {
+	public static int longueurListe(ANIMAL maTete) {
 		int compteur = 0;
 		ANIMAL monAnimal;
 		monAnimal=maTete;
